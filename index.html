@@ -13,7 +13,8 @@
 
 </head>
 
-<body>
+<body id="stop-scrolling">
+    <div class="preloader"></div>
 
     <div class="text-container">
         <div class="container-2">
@@ -230,7 +231,23 @@
             location.replace('login.html')
         }
     </script>
+<<<<<<< HEAD
 
+=======
+    <script>
+        function preloaderFadeOutInit(){
+          $('.preloader').fadeOut('slow');
+          $('body').attr('id','');
+          }
+          // Window load function
+          jQuery(window).on('load', function () {
+          (function ($) {
+          preloaderFadeOutInit();
+          })(jQuery);
+          });
+      </script>
+   
+>>>>>>> dc289cbc63da112f103daf77fbe24f1ef97269a0
 </body>
 
 </html>

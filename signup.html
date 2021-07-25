@@ -555,6 +555,7 @@
     }
 
 
+<<<<<<< HEAD
     function FinalResults() {
         var usercode = document.forms["verificationform"]["code"].value;
         console.log('hii')
@@ -587,6 +588,42 @@
                 dangerMode: true,
             })
         }
+=======
+    function FinalResults(){
+      var usercode = document.forms["verificationform"]["code"].value;
+      console.log('hii')
+      if(code == usercode){
+      
+        
+
+        swal({
+            title: "Registration Successful!",
+            text:  "Happy to have you aboard",
+            type: "success",
+          });
+        
+          window.location.href="quiz.html";
+        // console.log(window.location.href)
+        // console.log('hi')
+        // var url = window.location.href
+        // var url1 = url.split("signup")
+        // console.log(url1)
+        // var newurl = url1[0] + "quiz.html"
+        // console.log(newurl)
+        // history.pushState(null,null, newurl);
+        // window.location.reload();
+        // onsubmit="return DisplayResults()"
+
+  }else{
+        swal({
+          title: "Invalid code",
+          type: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+      }
+      return false
+>>>>>>> dc289cbc63da112f103daf77fbe24f1ef97269a0
     }
 
     function change(e) {
